@@ -1,0 +1,140 @@
+@media screen and (max-width: 1500px) {
+    .subtitle {
+        font-size: 2vw;
+    }
+    /*Header*/
+    .header-container {
+        font-size: 1.5vw;
+    }
+
+    ul>img {
+        width: 7%;
+        height: 7%;
+    }
+
+    li {
+        margin: 0.78%;
+        /*el 0.78% de 1920 es 15, he tenido que calcularlo para que no se me vaya de golpe al hacerlo mas pequeño y que se pegue*/
+    }
+
+    .header-container>ul>li>a>img {
+        width: 1%;
+        height: 1%;
+    }
+
+    /*Video*/
+    .video-container {
+        width: auto;
+        height: auto;
+    }
+
+    .video-content {
+        width: auto;
+        height: auto;
+    }
+
+    .video-content>h1 {
+        font-size: 3vw;
+    }
+
+    .video-content>p {
+        font-size: 2vw;
+    }
+
+    .button {
+        width: auto;
+        height: auto;
+        padding: 1vw;
+        font-size: 1.5vw;
+    }
+
+    /*Adorable Features*/
+    .feature-container {
+        width: auto;
+        height: auto;
+    }
+
+    .feature-content {
+        width: auto;
+        height: auto;
+    }
+
+    .feature-content>h1 {
+        font-size: 3vw;
+    }
+
+    .feature-content>p {
+        font-size: 2vw;
+    }
+
+    .izquierda {
+        width: 50%;
+        height: auto;
+    }
+
+    .feature-content3 {
+        width: auto;
+        height: auto;
+    }
+
+    .feature-content4 {
+        width: auto;
+        height: auto;
+    }
+
+    .feature-content4>.feature-derecha>h2 {
+        font-size: 2vw;
+    }
+
+    .feature-content4>.feature-derecha>p {
+        font-size: 1vw;
+    }
+
+    /*More Valued Facts*/
+    .block-container>h1 {
+        font-size: 3vw;
+    }
+
+    .icons {
+        width: 25%;
+    }
+
+    .item {
+        font-size: 1.5vw;
+    }
+
+    .item>h3 {
+        font-size: 2vw;
+    }
+
+    /*Our Professional Achievements*/
+    .achievements>aside>h1 {
+        font-size: 3vw;
+    }
+
+    .parrafo {
+        font-size: 2vw;
+    }
+    
+    .achievements>.derecha {
+        font-size: 2vw;
+    }
+
+    .achievements>.izquierda {
+        font-size: 2vw;
+    }
+
+    /*Footer*/
+    .footer-list {
+        margin-top: 2vw;
+    }
+
+    .footer-container {
+        font-size: 2vw;
+    }
+
+    .footer-list>li>a>img {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+}
