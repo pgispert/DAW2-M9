@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+@font-face {
+    font-family: Text;
+    src: url(./fonts/Lato-Light.ttf) format("truetype");
+}
+
+body{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}

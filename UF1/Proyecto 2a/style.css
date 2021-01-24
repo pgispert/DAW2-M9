@@ -29,7 +29,7 @@ header {
 
 @font-face {
     font-family: Text;
-    src: url(../fonts/Lato-Light.ttf) format("truetype");
+    src: url(./fonts/Lato-Light.ttf) format("truetype");
 }
 
 .title>h1 {
@@ -111,4 +111,8 @@ img {
     .item>h3 {
         font-size: 1rem;
     }
+}
+
+div {
+    border: #F00;
 }
