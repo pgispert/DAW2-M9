@@ -1,4 +1,4 @@
-@media screen and (max-width: 1500px) {
+@media screen and ( max-width : 1500px ){
     .subtitle {
         font-size: 2vw;
     }
@@ -30,22 +30,24 @@
 
     .video-content {
         width: auto;
+		max-width: 500px;
         height: auto;
     }
 
     .video-content>h1 {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .video-content>p {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .button {
         width: auto;
         height: auto;
-        padding: 1vw;
-        font-size: 1.5vw;
+        padding: 0.5vw 1vw;
+        font-size: 1vw;
+		border-radius: 30%;
     }
 
     /*Adorable Features*/
@@ -60,11 +62,11 @@
     }
 
     .feature-content>h1 {
-        font-size: 3vw;
+        font-size: 	2vw;
     }
 
     .feature-content>p {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .izquierda {
@@ -87,7 +89,7 @@
     }
 
     .feature-content4>.feature-derecha>p {
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
 
     /*More Valued Facts*/
@@ -124,17 +126,40 @@
         font-size: 2vw;
     }
 
+    /*Team*/
+    .team>*>h1 {
+        font-size: 3vw;
+    }
+
+    .team>*>p {
+        font-size: 1.5vw;
+    }
+
+    .persona>*>*>.izquierda {
+        font-size: 1vw;
+    }
+    
+    .persona>*>*>.derecha {
+        font-size: 1vw;
+    }
+
     /*Footer*/
     .footer-list {
         margin-top: 2vw;
-    }
-
-    .footer-container {
-        font-size: 2vw;
     }
 
     .footer-list>li>a>img {
         width: 1.5vw;
         height: 1.5vw;
     }
+}
+
+@media screen and ( max-width : 800px ) {
+    .background {
+        display: none;
+    }
+}
+
+@media screen and ( max-width : 600px ) {
+
 }

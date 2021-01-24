@@ -2,6 +2,11 @@ body {
     margin: 0;
     font-family: Text, Calibri, Arial, Helvetica, sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
 /*Header*/
 .header-container {
     margin: 2% 5%;
@@ -18,18 +23,31 @@ ul, li {
 }
 
 ul {
-    width: 100%;
+    width: 75%;
     margin-block-start: 0px;
     margin-block-end: 0px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 li{
     display: inline;
     justify-content: center;
     margin: 15px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.rotar {
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 /*Contenido*/
@@ -114,6 +132,7 @@ p.texto {
 .feature-content2 {
     width: 100%;
     display: flex;
+	vertical-align: middle;
 }
 
 .feature-content3 {
@@ -134,6 +153,7 @@ p.texto {
 .izquierda {
     width: 50%;
     font-size: 20px;
+    text-align: start;
 }
 
 .izquierda>img {
@@ -162,7 +182,10 @@ p.texto {
 .feature-derecha>p {
     margin-block-start: 0px;
     margin-block-end: 0px;
-    padding-top: 1rem;
+}
+
+.feature-content4>img {
+	padding-top: 1rem;
 }
 
 /*More Valued Facts*/
@@ -263,7 +286,6 @@ aside {
 
 .progress1 {
     background-color: #fc8c50;
-    display: block;
     height: 100%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -271,7 +293,6 @@ aside {
 
 .progress2 {
     background-color: #f1c30f;
-    display: block;
     height: 100%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -279,7 +300,13 @@ aside {
 
 .progress3 {
     background-color: #84b813;
-    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.progress_black {
+    background-color: #18191d;
     height: 100%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -289,6 +316,63 @@ aside {
     float: right;
     height: 100%;
     width: 50%;
+}
+
+/*Team*/
+.team {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 3rem 0rem;
+    padding-bottom: 4rem;
+    position: relative;
+    height: 1200px;
+}
+
+.personas {
+    display: flex;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.persona {
+    width: 100%;
+    max-width: 365px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #FFF;
+    display: inline;
+}
+
+.persona>*>*>.izquierda {
+    font-size: 1vw;
+}
+
+.persona>*>*>.derecha {
+    font-size: 1vw;
+}
+
+.persona>img {
+    width: 100%;
+}
+
+.background {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.background>.persona {
+    background-color: #f0f0f0;
+}
+
+.CEO {
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*Footer*/
@@ -302,10 +386,7 @@ aside {
 .footer-list {
     width: 30%;
     align-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     margin-top: 3rem;
-}
-
-.footer-list>li {
-    margin-left: 9%;
 }
