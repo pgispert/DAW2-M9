@@ -93,6 +93,15 @@ li{
     transform: translate(-50%, -50%);
 }
 
+.introSVG {
+    display: flex;
+    justify-content: center;
+}
+
+svg.play {
+    text-align: center;
+}
+
 .play {
     cursor: pointer;
 }
