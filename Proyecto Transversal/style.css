@@ -96,10 +96,16 @@ li{
 .introSVG {
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.introSVG>svg {
+    width: 40%;
+    height: 15%;
 }
 
 svg.play {
-    text-align: center;
+    padding: 0;
 }
 
 .play {
@@ -178,6 +184,12 @@ p.texto {
 .izquierda>img {
     width: 100%;
     height: 100%;
+}
+
+.izquierda>iframe {
+    padding-left: 10%;
+    width: 80%;
+    height: 400px;
 }
 
 .feature-content4>span>img {
@@ -328,6 +340,12 @@ aside {
 }
 
 .achievements>img {
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+.achievements>video {
     float: right;
     height: 100%;
     width: 50%;
