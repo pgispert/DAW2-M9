@@ -34,12 +34,14 @@
 
 <body class="main-layout">
     <!-- loader  -->
-    <div class="loader_bg">
+    <div class="loader_bg" role="complementary" aria-label="loading">
         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
     </div>
     <!-- end loader -->
     <!-- header -->
-    <header>
+    <header role="banner">
+
+        <a href="#content" style="padding-left: 2rem;">Jump to the content</a>
         <!-- header inner -->
         <div class="header-top">
             <div class="header">
@@ -49,7 +51,7 @@
                             <div class="full">
                                 <div class="center-desk">
                                     <div class="logo">
-                                        <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                        <a href="index.html" aria-label="Home page"><img src="images/logo.png" alt="#" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -60,9 +62,9 @@
                                     <nav class="main-menu">
                                         <ul class="menu-area-main">
                                             <li class="active"> <a href="index.html">Home</a> </li>
-                                            <li> <a href="#about">About</a> </li>
-                                            <li> <a href="#casino">Casino</a> </li>
-                                            <li> <a href="#testimonial">Testimonial</a> </li>
+                                            <li> <a href="#about" aria-label="About Us">About</a> </li>
+                                            <li> <a href="#casino" aria-label="Casino Information">Casino</a> </li>
+                                            <li> <a href="#testimonial" aria-label="Testimonial Review">Testimonial</a> </li>
                                             <li> <a href="#booktable">Book Table</a> </li>
                                             <li class="mean-last">
                                                 <a href="#"><img src="images/search_icon.png" alt="#" /></a>
@@ -79,7 +81,7 @@
 
             <!-- end header -->
             <section class="slider_section">
-                <div class="banner_main">
+                <div class="banner_main" id="content">
 
                     <div class="container">
 
@@ -92,7 +94,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <div class="text-img">
+                                <div class="text-img" role="heading" aria-level="2">
                                     <figure><img src="images/img.png" alt="cards" /></figure>
                                 </div>
                             </div>
@@ -105,7 +107,7 @@
         </div>
     </header>
     <!-- about  -->
-    <div id="about" class="about">
+    <div id="about" class="about" role="complementary" aria-label="about">
         <div class="container">
             <div class="row">
 
@@ -114,7 +116,7 @@
                         <h3> ABOUT US</h3>
                         <span>all games here</span>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, aIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, aIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lettersdistracted by the readable distracted by the readable , a</p>
-                        <a href="#">read more</a>
+                        <a href="#">more info</a>
                     </div>
                 </div>
             </div>
@@ -124,7 +126,7 @@
     <!-- end abouts -->
 
     <!-- our how_it -->
-    <div id="blog" class="how_it">
+    <div id="blog" class="how_it" role="complementary" aria-label="blog">
         <div class="container-fluid paddimg_ouu">
             <div class="row">
 
@@ -141,7 +143,7 @@
 
                             <h3>how it all started</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
-                            <a href="#">Read More</a>
+                            <a href="#">More information</a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +153,7 @@
     </div>
     <!-- end how_it -->
     <!-- We are -->
-    <div id="casino" class="We_are">
+    <div id="casino" class="We_are" role="complementary" aria-label="casino">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -191,8 +193,8 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev"> <i class='fa fa-angle-left'></i></a>
-                        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next"> <i class='fa fa-angle-right'></i></a>
+                        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev"> <p class='fa fa-angle-left prev'></p></a>
+                        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next"> <p class='fa fa-angle-right next'></p></a>
                     </div>
 
                 </div>
@@ -201,7 +203,7 @@
     </div>
     <!-- end We are -->
     <!-- contact -->
-    <div id="booktable" class="contact">
+    <div id="booktable" class="contact" role="form" aria-label="register form">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -222,13 +224,13 @@
                                         <input class="contactus" placeholder="Name" type="text" name="Name" aria-label="Name">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Phone" type="text" name="Phone" aria-label="Phobe">
+                                        <input class="contactus" placeholder="Phone" type="text" name="Phone" aria-label="Phone">
                                     </div>
                                     <div class="col-sm-12">
                                         <input class="contactus" placeholder="Email" type="text" name="Email" aria-label="Email">
                                     </div>
                                     <div class="col-sm-12">
-                                        <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                                        <textarea class="textarea" placeholder="Message" type="text" name="Message" aria-label="Enter your message"></textarea>
                                     </div>
                                     <div class="col-sm-12">
                                         <button class="send">Send</button>
@@ -248,7 +250,7 @@
     </div>
     <!-- end contact -->
     <!-- clients -->
-    <div id="testimonial" class="clients top_layer2 ">
+    <div id="testimonial" class="clients top_layer2" role="complementary" aria-label="review">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -260,9 +262,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="clients_box">
-                        <i><img src="images/cli.jpg" alt="#"/></i>
+                        <p><img src="images/cli.jpg" alt="#"/></p>
                         <h3>Jone Mark</h3>
-                        <span><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, <i class="fa fa-quote-right"></i></span>
+                        <span><p class="fa fa-quote-left"></p> Lorem ipsum dolor sit amet, <p class="fa fa-quote-right"></p></span>
 
                         <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                             <br> veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo
@@ -278,7 +280,7 @@
     <!-- end clients -->
 
     <!--  footer -->
-    <footr>
+    <footer>
         <div class="footer top_layer ">
             <div class="container">
                 <div class="row">
@@ -378,7 +380,7 @@
                 </div>
             </div>
         </div>
-    </footr>
+    </footer>
     <!-- end footer -->
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>

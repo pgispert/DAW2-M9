@@ -42,6 +42,17 @@
      -o-transition: all .3s ease-in-out;
      transition: all .3s ease-in-out;
 }
+
+input:focus, textarea:focus {
+    background-color: #a6f7ff;
+}
+
+button:focus, a:focus {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px #3a97f9;
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+}
+
  h1, h2, h3, h4, h5, h6 {
      letter-spacing: 0;
      font-weight: normal;
@@ -398,7 +409,7 @@
      color: #fff;
      line-height: 21px;
 }
- .right_cart_section ul li i {
+ .right_cart_section ul li p {
      margin-right: 10px;
      margin-top: 5px;
      float: left;
@@ -446,6 +457,7 @@
  .top-menu-left li a:hover {
      color: #38c8a8;
 }
+
  .right-dropdown-language {
      float: right;
      margin-left: 12px;
@@ -576,7 +588,7 @@
      border: none;
      border-radius: 0px;
 }
- .btn-template-outlined i {
+ .btn-template-outlined p {
      padding-right: 10px;
 }
  .text-muted {
@@ -1126,7 +1138,7 @@
      padding-top: 50px;
      font-size: 75px;
      line-height: 94px;
-    \padding-bottom: 25px;
+    padding-bottom: 25px;
 }
  .b_bold {
     font-size: 90px;
@@ -1385,6 +1397,7 @@
      border: #002aeb solid 1px;
      color: #fff;
 }
+
  .how_it .two-box_text .travel p {
      font-size: 17px;
      line-height: 30px;
@@ -1568,11 +1581,11 @@
      font-weight: 400;
      color: #1a1a1b;
 }
- .clients .clients_box i {
+ .clients .clients_box p {
      display: inline-block;
 }
  .clients .clients_box span {
-     color: #6e6e6e;
+     color: #6C5353;
      font-size: 16px;
      padding-bottom: 5px;
      display: inline-block;
@@ -1600,7 +1613,7 @@
      text-transform: uppercase;
      padding-bottom: 20px;
 }
- .footer .address i {
+ .footer .address p {
      color: #fff;
      font-size: 15px;
      font-weight: 500;
@@ -1648,7 +1661,8 @@
 }
  ul.loca li {
     display: inline-block;
-     padding-right: 23%;
+    padding-right: 23%;
+    color: #6C5353;
 }
  ul.loca li:last-child {
     padding-right: 0;
@@ -1774,7 +1788,8 @@
      padding-top: 20px;
 }
  .copyright a {
-    color: rgb(196, 255, 247);
+    color: rgb(255, 255, 255);
+    text-decoration: underline !important;
 }
  .copyright a:hover {
      color: #258bf1 
